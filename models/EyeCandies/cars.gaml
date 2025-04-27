@@ -95,7 +95,7 @@ global{
 	// spawn one car on the edge of the map
 	action spawn_car{
 		intersection i <- one_of(intersection where (each.is_spawn_location));
-		create car with: (location: i.location, target: i.final_intersection);
+		//create car with: (location: i.location, target: i.final_intersection);
 	}
 	
 	// spawn cars at given time intervals

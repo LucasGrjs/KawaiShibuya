@@ -165,14 +165,14 @@ global{
 		// create the train locomotive
 		ask rail_wp where (each.name = line_name and each.loco_spawn){
 			rail out <- rail(first(roads_out));
-			create train {
+			/*create train {
 				type <- train_type;
 				location <- myself.location;
 				target <- myself.final_intersection;			
 				heading <- angle_between(first(out.shape.points),first(out.shape.points)+{1.0,0},out.shape.points[1]);
 				loco <- self;
 				do init(shaikyo_type);
-			}
+			}*/
 		}
 
 		// create the carriages following the previous locomotive
